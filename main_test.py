@@ -33,7 +33,7 @@ counter_false_positive_new = 0
 # Allow for an input file
 # pass_iter = []
 input_file = input("Enter File Name for Password File To Be Read: ")
-with open(input_file, "r") as passwords:
+with open(input_file, "r", encoding="ISO-8859-1") as passwords:
     # for line in passwords:
     #     for word in line.split():
     #         pass_iter.append(word)
