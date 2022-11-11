@@ -31,7 +31,7 @@ with open(input_file, "r", encoding="ISO-8859-1") as passwords:
 
 # calculation used from calculator here: https://hur.st/bloomfilter/
 
-size_of_bloom_filter = int((len(pass_iter) * np.log(1/10000)) / np.log(1 / np.power(2, np.log(2))))
+size_of_bloom_filter = 100000
 
 hash_array_new = [0] * size_of_bloom_filter
 
